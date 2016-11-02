@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: actors
+#
+#  id          :integer          not null, primary key
+#  name        :string(100)
+#  bio         :text
+#  birth_date  :date
+#  birth_place :string(100)
+#  image_url   :string
+#  alive       :boolean
+#  death_date  :date
+#  death_place :string(100)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  bio: MyText
+  birth_date: 2015-05-09
+  birth_place: MyString
+  image_url: MyString
+  dead: false
+  death_date: 2015-05-09
+  death_place: MyString
+
+two:
+  name: MyString
+  bio: MyText
+  birth_date: 2015-05-09
+  birth_place: MyString
+  image_url: MyString
+  dead: false
+  death_date: 2015-05-09
+  death_place: MyString

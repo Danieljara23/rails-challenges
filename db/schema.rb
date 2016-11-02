@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028014141) do
+ActiveRecord::Schema.define(version: 20150510022531) do
 
-  create_table "movies", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "duration"
-    t.integer  "year"
-    t.string   "rating"
-    t.text     "description"
-    t.text     "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "actors", force: :cascade do |t|
+    t.string   "name",        limit: 100
+    t.text     "bio"
+    t.date     "birth_date"
+    t.string   "birth_place", limit: 100
+    t.string   "image_url"
+    t.boolean  "alive"
+    t.date     "death_date"
+    t.string   "death_place", limit: 100
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
 end
